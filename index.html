@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Suomen kansallispuistot</title>
+    <meta lang="FI">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- oma tyyli -->
+    <style class="open-sans">
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Special+Gothic:wght@447&display=swap');
+    </style>
+    <link href="tyyli.css" rel="stylesheet">
+
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+    <main id="alku">
+        <!-- Navipalkki -->
+        <nav class="navbar navbar-expand-sm navbar-custom fixed-top">
+            <div class="container-fluid">
+
+                <!-- brändin logo ja nimi-->
+                <a class="navbar-brand" href="#alku">Suomen kansallispuistot</a>
+
+                <!-- mobiilinavigointi-->
+
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- navipalkin linkit-->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <li class="nav-item">
+                            <!-- sivun sisäinen linkki-->
+                            <a class="nav-link" href="#suosikki">Suosikkipuistoni</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- sivun sisäinen linkki-->
+                            <a class="nav-link" href="#kortit">Kansallispuistojen maisemateemat</a>
+                        </li>
+                        <!-- alasvetovalikko-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Usein
+                                kysytyt kysymykset</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#headingOne">Tarvitseeko kansallispuistoissa
+                                        maksaa?</a></li>
+                                <li><a class="dropdown-item" href="#headingTwo">Saako teltan pystyttää minne
+                                        tahansa?</a></li>
+                                <li><a class="dropdown-item" href="#headingThree">Onko koirat sallittuja?</a></li>
+                            </ul>
+
+                        </li>
+
+                        <!-- linkin rakenne-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#videot">Videot</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <!-- sivun sisäinen linkki-->
+                            <a class="nav-link" href="#lomake">Lomake</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Kuvakaruselli -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="kuva5.jpg" alt="Helvetinjärvi" class="d-block" style="width:100%;;">
+                    <div class="carousel-caption">
+                        <h3>Pyhä-Luosto</h3>
+                        <p>Pyhä-Luoston jylhät tunturit ja syvät kurut sekä niitä ympäröivät aapasuot ja aarniometsät
+                            lumoavat vierailijansa.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="kuva2.jpg" alt="Nuuksio" class="d-block" style="width:100%">
+                    <div class="carousel-caption">
+                        <h3>Nuuksio</h3>
+                        <p>Nuuksiossa voit kulkea vanhojen metsien, kallioiden ja kirkkaiden järvien keskellä</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="kuva3.jpg" alt="Sipoonkorpi" class="d-block" style="width:100%">
+                    <div class="carousel-caption">
+                        <h3>Sipoonkorpi</h3>
+                        <p>Laajan, mutta pienipiirteisen metsämosaiikin, suopainanteiden ja jyrkkien kallioiden
+                            kirjomassa maastossa risteilee kuusi varsinaista reittiä ja useita yhdyspolkuja.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="kuva4.jpg" alt="Koli" class="d-block" style="width:100%">
+                    <div class="carousel-caption">
+                        <h3>Koli</h3>
+                        <p>Kolin kansallispuisto muodostaa huippuineen, rotkoineen ja harjuineen upean geologisen
+                            kokonaisuuden.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <!-- grid-palstat -->
+        <div class="container-fluid" id="suosikki">
+            <div class="row">
+                <div class="col-lg-4"><img src="grid1.webp" alt="ruskan värit metsässä"
+                        style="width: 100%; max-width: fit-content; border-radius: 30%;"></div>
+                <div class="col-lg-4">
+                    <p><br>Urho Kekkosen kansallispuisto <br> sijaitsee Itä-Lapissa Saariselän tunturialueella, ja
+                        se tunnetaan laajoista erämaistaan, kirkkaista puroistaan ja tunturien rauhasta.</p>
+                    <p>Jokainen vierailu
+                        täällä muistuttaa, kuinka monimuotoinen ja hiljainen Suomen luonto voi olla.</p>
+                </div>
+                <div class="col-lg-4"><img src="grid2.webp" alt="luminen maisema"
+                        style="width: 100%; max-width: fit-content;border-radius: 30%;"></div>
+            </div>
+        </div>
+
+        <!-- kortit-->
+        <div class="card-group" id="kortit">
+            <div class="card">
+                <img src="card1.webp" class="card-img-top" alt="Lapin tunturimaisema ja avoin erämaa.">
+                <div class="card-body">
+                    <h5 class="card-title">Erämaa ja tunturit</h5>
+                    <p class="card-text">Lapin kansallispuistot edustavat Suomen laajimpia erämaa-alueita ja avaria
+                        tunturimaisemia. Alueille ovat tyypillisiä hiljaisuus, karu kauneus ja pitkät vaellusreitit,
+                        joissa voi kokea luonnon rauhan. Esimerkkejä ovat Urho Kekkosen, Pallas–Yllästunturin ja
+                        Lemmenjoen kansallispuistot. Tunturiluonto, poronhoitokulttuuri ja pohjoisen valo tekevät näistä
+                        puistoista erityisen elämyksellisiä.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="card3.webp" class="card-img-top" alt="Kallioisia saaria ja avautuva merimaisema.">
+                <div class="card-body">
+                    <h5 class="card-title">Rannikko ja saaristo</h5>
+                    <p class="card-text">Suomen saaristo ja rannikko ovat kansainvälisesti ainutlaatuisia
+                        luontokokonaisuuksia, joita kansallispuistot suojelevat. Alueilla retkeilijää odottavat
+                        kallioiset luodot, merituuli ja vaihtelevat merelliset maisemat. Saaristomeren, Perämeren ja
+                        Selkämeren kansallispuistot tarjoavat mahdollisuuden tutustua saariston kulttuuriin. Nämä
+                        puistot tarjoavat täysin erilaisen luontokokemuksen kuin sisämaan metsät.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="card2.webp" class="card-img-top" alt="Tyyni järvimaisema ja metsien ympäröimät rannat.">
+                <div class="card-body">
+                    <h5 class="card-title">Järvi- ja metsämaisemat</h5>
+                    <p class="card-text">Suomen järvi- ja metsäluonto näkyy monissa kansallispuistoissa, joissa tyyni
+                        vesi ja vehreät metsät muodostavat rauhallisen ympäristön retkeilyyn. Maisemaa hallitsevat
+                        saaret, kalliot ja luonnontilaiset metsät, jotka tarjoavat runsaasti luontokokemuksia.
+                        Linnansaaren, Koloveden ja Repoveden kansallispuistot ovat tunnettuja selkeistä reiteistään,
+                        kauniista järvimaisemistaan ja monipuolisista virkistysmahdollisuuksistaan.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="card4.webp" class="card-img-top" alt="Avosuo pitkospuineen ja luonnontilaisine maisemine.">
+                <div class="card-body">
+                    <h5 class="card-title">Suot ja erikoiset luontotyypit</h5>
+                    <p class="card-text">Useat kansallispuistot esittelevät harvinaisia ja luonnontilaisia ympäristöjä,
+                        joita ei muualla juuri näe. Suot, rotkolaaksot ja erikoiset metsäalueet tarjoavat vaihtelua
+                        perinteisiin retkikohteisiin. Torronsuon, Helvetinjärven ja Isojärven kaltaisissa puistoissa voi
+                        kulkea pitkospuilla, tutkia jylhiä kalliorinteitä ja kokea luonnon monimuotoisuuden läheltä. Ne
+                        sopivat erityisesti retkeilijöille, jotka etsivät erilaisia maisemia.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- haitarimalli -->
+        <div class="accordion" id="haitarimalli">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Tarvitseeko kansallispuistoissa maksaa?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body accordion-content">
+                        <div class="accordion-image">
+                            <img src="haitari3.png" alt="Kuva " class="accordion-img">
+                        </div>
+                        <div class="accordion-text">
+                            Useimpiin kansallispuistoihin ei ole erillistä pääsymaksua: luonnonsuojelualueille voi
+                            yleensä kulkea vapaasti.
+                            Kuitenkin joistakin palveluista ja toiminnoista voidaan periä maksuja, kuten opastetuista
+                            retkistä, venekuljetuksista,
+                            opastetuista ohjelmapalveluista tai maksullisista parkkialueista. Tarkemmat tiedot ja
+                            mahdolliset maksut löytyvät
+                            aina kunkin puiston virallisilta sivuilta.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Saako teltan pystyttää minne tahansa?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body accordion-content">
+                        <div class="accordion-image">
+                            <img src="haitari2.png" alt="Kuva teltasta luonnossa" class="accordion-img">
+                        </div>
+                        <div class="accordion-text">
+                            Jokamiehenoikeudet sallivat yleensä tilapäisen telttailun poissa asutuksen läheisyydestä,
+                            usein 1–2 yöksi samalle paikalle.
+                            Monilla suojelualueilla ja herkissä kohteissa on kuitenkin rajoituksia: esimerkiksi lintujen
+                            pesimäalueilla, suojelualueiden
+                            ytimissä tai merkityillä suojelualueilla telttailu voi olla kiellettyä. Noudata aina
+                            paikallisia ohjeita ja jätä paikka siistik
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Onko koirat sallittuja?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body accordion-content">
+                        <div class="accordion-image">
+                            <img src="haitari1.png" alt="Kuva koirasta luonnossa" class="accordion-img">
+                        </div>
+                        <div class="accordion-text">
+                            Koirat ovat useimmiten sallittuja kansallispuistoissa, mutta niiden pitoon liittyy usein
+                            rajoituksia. Monilla alueilla koira tulee
+                            pitää kytkettynä erityisesti laidunalueilla, linnunpesimäaikoina ja suosituilla reiteillä.
+                            Joissain suojelualueissa voi olla
+                            kokonaiskiellot tai kausittaisia rajoituksia - tarkista aina ennen lähtöä alueen säännöt.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- tabs ja video -->
+        <ul class="nav nav-tabs" id="videot">
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#video1">Nuuksio - Korpin kierros syyskuussa</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#video2">Suomen kansallispuistot ja erämaat </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#video3">TOP5 Parhaat Suomen kansallispuistot</a>
+            </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div class="tab-pane container active" id="video1">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/jRG_Sd5fzdc?si=6QM5SszrasctZe4X"></iframe>
+                </div>
+            </div>
+            <div class="tab-pane container fade" id="video2">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/Og1cs6_Mhx4?si=dGR0_8lmqjHR2Rru"></iframe>
+                </div>
+            </div>
+            <div class="tab-pane container fade" id="video3">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/De3PBPe5afg?si=UEumRSEBCMu6UnHY"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- taulukko -->
+
+<div class="table-container" id="taulukko">
+    <table class="custom-table">
+        <thead>
+            <tr>
+                <th>Puisto</th>
+                <th>Sijainti</th>
+                <th>Pinta-ala</th>
+                <th>Tunnettu kohde</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Urho Kekkosen kansallispuisto</td>
+                <td>Lappi</td>
+                <td>2 550 km²</td>
+                <td>Kiilopää</td>
+            </tr>
+            <tr>
+                <td>Kolin kansallispuisto</td>
+                <td>Pohjois-Karjala</td>
+                <td>30 km²</td>
+                <td>Ukko-Koli</td>
+            </tr>
+            <tr>
+                <td>Nuuksion kansallispuisto</td>
+                <td>Espoo / Kirkkonummi</td>
+                <td>53 km²</td>
+                <td>Haltian luontokeskus</td>
+            </tr>
+            <tr>
+                <td>Oulangan kansallispuisto</td>
+                <td>Pohjois-Pohjanmaa / Lappi</td>
+                <td>270 km²</td>
+                <td>Pieni Karhunkierros &amp; Kiutaköngäs</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+        <!-- lomake -->
+        <form onsubmit="return false" id="lomake">
+            <label for="nimi">Nimi:</label>
+            <input type="text" id="nimi" placeholder="Maija Meikäläinen" required maxlength="50" size="20">
+            <br>
+            <label for="sposti">Sähköposti:</label>
+            <input type="email" id="sposti" placeholder="test@gmail.com" required max="50" size="20"
+                pattern="\+?[0-9 () \-]+">
+            <br>
+            <label for="pnumero">Puhelinnumero</label>
+            <input type="tel" id="pnumero" placeholder="0401234567" required max="14" size="20">
+            <br>
+            <label for="teksti">Palaute</label>
+            <textarea id="teksti" placeholder="Viestisi..."></textarea>
+
+
+            <!-- radiobutton-->
+            <div>Mitä pidit sivustosta?</div>
+            <label>
+                <input type="radio" name="arvio" value="Mahtava">Mahtava!
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="arvio" value="Hyvä">Hyvä!
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="arvio" value="Ihan ok">Ihan ok!
+            </label>
+            <br>
+            <!-- checkbox-->
+            <div>Mitä haluaisit lisää?</div>
+            <label>
+                <input type="checkbox" name="lisaa" value="Kuvia">Kuvia
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="lisaa" value="Videoita">Videoita
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="lisaa" value="Blogeja">Blogeja
+            </label>
+            <br>
+
+            <!-- alasvetovalikko-->
+            <div>Löysitkö sivuilta haluamasi tiedot?</div>
+            <select name="" id="tieto">
+                <option value="tyhjä"></option>
+                <option value="En">En</option>
+                <option value="Ehkä">Ehkä</option>
+                <option value="Kyllä">Kyllä</option>
+                <option value="En kerro">En kerro</option>
+            </select>
+            <br>
+            <!-- lähetä tiedot-->
+            <input type="submit" value="Lähetä" onclick="lomake()">
+            <br>
+            <input type="reset" value="Tyhjennä">
+        </form>
+
+        <!-- Lomakkeen tietojen tulostus-->
+        <div id="vastaus"></div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            function lomake() {
+                // luetaan tiedot lomakkeesta
+                let nimi = document.getElementById("nimi").value;
+                let email = document.getElementById("sposti").value;
+                let pnumero = document.getElementById("pnumero").value;
+                let palaute = document.getElementById("teksti").value;
+
+                let muuttuja = "";
+                let radios = document.getElementsByName('arvio');
+
+                for (let i = 0, length = radios.length; i < length; i++) {
+                    if (radios[i].checked) {
+                        muuttuja = muuttuja + radios[i].value;
+                        break;
+                    }
+
+                }
+                let monivalinnat = "";
+                var boxit = document.getElementsByName('lisaa');
+                for (var i = 0, length = boxit.length; i < length; i++) {
+                    if (boxit[i].checked) {
+                        monivalinnat = monivalinnat + " " + boxit[i].value;
+                    }
+                }
+                let valinta = "";
+                let x = document.getElementById("tieto").selectedIndex;
+                let y = document.getElementById("tieto").options;
+                valinta = valinta + y[x].text;
+
+
+
+                //tulosta tiedot web-sivustolle
+                document.getElementById("vastaus").innerHTML = "Kiitos viestistä " + nimi + "<br>Sähköpostisi: " + email + "<br>Sivusto on mielestäsi:" + muuttuja + "<br>Haluaisit lisää: " + monivalinnat + "<br>Löysitkö sivuilta haluamasi tiedot? " + valinta;
+                document.getElementById("vastaus").style.display = "block";
+
+            }
+            // Sulkee mobiilivalikon, kun klikataan mitä tahansa kohtaa sivulla
+            document.addEventListener("click", function (event) {
+                const navbar = document.getElementById("collapsibleNavbar");
+                const toggler = document.querySelector(".navbar-toggler");
+
+                // Jos navigaatio ei ole auki → ei tehdä mitään
+                if (!navbar.classList.contains("show")) return;
+
+                // Jos klikkaus EI osunut valikkoon eikä toggleriin → sulje valikko
+                if (!navbar.contains(event.target) && !toggler.contains(event.target)) {
+                    toggler.click(); // sulkee valikon
+                }
+            });
+
+
+        </script>
+    </main>
+</body>
+
+</html>
